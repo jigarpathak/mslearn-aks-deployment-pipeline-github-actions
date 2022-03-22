@@ -15,7 +15,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Docker Login
-        uses: docker/login-action@ded2c098-f653-4304-95ab-50b356c73077
+        uses: docker/login-action@v1
         with:
           registry: ${{ secrets.ACR_NAME }}
           username: ${{ secrets.ACR_LOGIN }}
